@@ -5,7 +5,6 @@ import ButtonContainer from './ButtonContainer';
 
 class App extends Component {
 
-  /*
   constructor() {
     super();
     this.state = {
@@ -13,12 +12,6 @@ class App extends Component {
       base : null,
       operand : null,
     };
-  }
-  */
-  state = {
-    operator: null,
-    base: null,
-    operand: null,
   }
 
   handleClick = buttonName => {
