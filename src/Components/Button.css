@@ -1,0 +1,10 @@
+button {
+  background-color: #B04CAD; /* Purple */
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}

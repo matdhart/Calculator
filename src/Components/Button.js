@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 import './Button.css'
 
-class Button {
+class Button extends Component {
 
   handleClick = () => {
     this.props.clickHandler(this.props.name);

@@ -1,16 +1,24 @@
 import React , {Component} from 'react';
 import './App.css';
 import Display from './Display.js';
+import ButtonContainer from './ButtonContainer';
 
 class App extends Component {
 
+  /*
   constructor() {
     super();
     this.state = {
-      operator = null,
-      base = null;
-      operand = null;
+      operator : null,
+      base : null,
+      operand : null,
     };
+  }
+  */
+  state = {
+    operator: null,
+    base: null,
+    operand: null,
   }
 
   handleClick = buttonName => {
@@ -20,7 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Display value={base | operand | '0'}/>
+        <Display value={this.state.base || this.state.operand || '0'}/>
         <ButtonContainer clickHandler={this.handleClick}/>
       </div>
     );
