@@ -1,7 +1,9 @@
 import React , {Component} from 'react';
 import './App.css';
+
 import Display from './Display.js';
-import ButtonContainer from './ButtonContainer';
+import ButtonContainer from './ButtonContainer.js';
+import Calculator from '../Logic/Calculator.js'
 
 class App extends Component {
 
@@ -16,6 +18,7 @@ class App extends Component {
 
   handleClick = buttonName => {
     //calculate click given a button and current state
+    this.setState(Calculator(this.state, buttonName));
   }
 
   render() {
