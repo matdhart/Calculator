@@ -32,7 +32,7 @@ class ButtonContainer extends Component {
           <Button name='=' clickHandler={this.handleClick} />
         </div>
 
-        <div class="five">
+        <div id="five">
           <Button name='C' clickHandler={this.handleClick} />
           <Button name='x' clickHandler={this.handleClick} />
           <Button name='/' clickHandler={this.handleClick} />
