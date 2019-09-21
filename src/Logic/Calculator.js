@@ -9,7 +9,11 @@ function Calculator(state, buttonName) {
     }
     else if (buttonName === '=') {
       if (state.operator && state.operand) {
-        return {base: compute(state.operator, state.base, state.operand)};
+        return {
+          orperator: null,
+          base: compute(state.operator, state.base, state.operand),
+          orperand: null,
+        };
       }
       else {
         //State should not change unless all three attr. have values
@@ -32,20 +36,20 @@ function Calculator(state, buttonName) {
         }
     }
     else if (isNum(buttonName)) {
-      if (state.operator) {
+      if (state.operator === null) {
+          if (state.base) {
+            return {base: state.base + buttonName};
+          }
+          else {
+            return {base: buttonName};
+          }
+      }
+      else {
         if (state.operand) {
           return {operand: state.operand + buttonName};
         }
         else {
-          return {operand: buttonName};
-        }
-      }
-      else {
-        if (state.base) {
-          return {base: state.base + buttonName};
-        }
-        else {
-          return {base: buttonName};
+          return {operand: buttonName}
         }
       }
     }
@@ -58,7 +62,7 @@ function Calculator(state, buttonName) {
         if (state.operand) {
           return {
             operator: buttonName,
-            base: compute(state.operator, state.base, state.operand),
+//            base: compute(state.operator, state.base, state.operand),
             operand: null,
           };
         }
@@ -75,8 +79,8 @@ function isNum(questionable) {
 }
 
 function compute(operator, operand1, operand2) {
-    const num1 = new Number(operand1);
-    const num2 = new Number(operand2);
+    const num1 = Number(operand1);
+    const num2 = Number(operand2);
     switch (operator) {
       case '+': return (num1.valueOf() + num2.valueOf()).toString();
         break;

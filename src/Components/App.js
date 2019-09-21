@@ -19,6 +19,10 @@ class App extends Component {
   handleClick = buttonName => {
     //calculate click given a button and current state
     this.setState(Calculator(this.state, buttonName));
+    console.log(this.state.operator);
+    console.log(this.state.base);
+    console.log(this.state.operand);
+    console.log("==========");
   }
 
   render() {

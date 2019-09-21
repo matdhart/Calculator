@@ -1,9 +1,10 @@
 button {
-  background-color: #B04CAD; /* Purple */
-  color: Orange;
+  background-color: #4CAF50; /* Green */
+  color: Gold;
   height: 100%;
   width: 100%;
   text-align: center;
   text-decoration: none;
   padding: none;
+  font-size: 20px;
 }

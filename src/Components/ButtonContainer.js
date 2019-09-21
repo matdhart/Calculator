@@ -14,15 +14,15 @@ class ButtonContainer extends Component {
         <div>
           <Button name='7' clickHandler={this.handleClick} />
           <Button name='4' clickHandler={this.handleClick} />
-          <Button name='3' clickHandler={this.handleClick} />
-          <Button name='0' clickHandler={this.handleClick} />
+          <Button name='1' clickHandler={this.handleClick} />
+          <Button name='C' clickHandler={this.handleClick} />
         </div>
 
         <div>
           <Button name='8' clickHandler={this.handleClick} />
           <Button name='5' clickHandler={this.handleClick} />
           <Button name='2' clickHandler={this.handleClick} />
-          <Button name='.' clickHandler={this.handleClick} />
+          <Button name='0' clickHandler={this.handleClick} />
         </div>
 
         <div>
@@ -32,8 +32,7 @@ class ButtonContainer extends Component {
           <Button name='=' clickHandler={this.handleClick} />
         </div>
 
-        <div id="five">
-          <Button name='C' clickHandler={this.handleClick} />
+        <div>
           <Button name='x' clickHandler={this.handleClick} />
           <Button name='/' clickHandler={this.handleClick} />
           <Button name='+' clickHandler={this.handleClick} />
