@@ -4,12 +4,8 @@
 }
 
 .ButtonContainer div{
-  color: #4CAF50; /* Green */
   width: 25%;
   height: 100%;
-  padding: none;
-  text-align: center;
-  text-decoration: none;
   display: inline;
   float: left;
 }
