@@ -3,12 +3,12 @@ button {
     rgba(88, 88, 88, 0.9),rgba(88, 88, 88, 1)
   );
   height: 100%;
-  width: 100%;
+  width: 95%;
   font-size: 100%;
-  border-radius: 10%;
+  border-radius: 20%;
   color:inherit;
 }
 
-button:hover {
+.Button button:hover {
   background-color: rgb(78, 78, 78);
 }

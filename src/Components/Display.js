@@ -6,7 +6,7 @@ class Display extends Component {
   render() {
     return (
       <div class="Display">
-        <p>{this.props.value}</p>
+        <p class='blink' id="Value">{this.props.value}</p>
       </div>
     );
   }

@@ -1,9 +1,25 @@
 .Display {
   height: 100%;
   width: 100%;
-  text-align: right;
 }
 
-.Display p {
-  padding-right: 5%;
+#Value {
+  text-align: right;
+  padding-right: 17%;
+}
+
+.blink {
+  animation: blinker 1.5s ease-in infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }

@@ -11,7 +11,7 @@ class ButtonContainer extends Component {
   render() {
     return (
       <div class="ButtonContainer">
-        <div>
+        <div id="first">
           <Button name='7' clickHandler={this.handleClick} />
           <Button name='4' clickHandler={this.handleClick} />
           <Button name='1' clickHandler={this.handleClick} />
@@ -32,7 +32,7 @@ class ButtonContainer extends Component {
           <Button name='=' clickHandler={this.handleClick} />
         </div>
 
-        <div>
+        <div id='last'>
           <Button name='x' clickHandler={this.handleClick} />
           <Button name='/' clickHandler={this.handleClick} />
           <Button name='+' clickHandler={this.handleClick} />
