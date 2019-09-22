@@ -1,14 +1,14 @@
 button {
   background-image: radial-gradient(
-    rgba(40, 88, 43, 0.9),rgba(40, 88, 43, 1)
+    rgba(88, 88, 88, 0.9),rgba(88, 88, 88, 1)
   );
-  color: #ffc95f;
   height: 100%;
   width: 100%;
   font-size: 100%;
   border-radius: 10%;
+  color:inherit;
 }
 
 button:hover {
-  background-color: #37765f;
+  background-color: rgb(78, 78, 78);
 }

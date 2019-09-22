@@ -1,11 +1,9 @@
 .Display {
-  background-color: #282c34;
   height: 100%;
   width: 100%;
   text-align: right;
 }
 
 .Display p {
-  color: #ffc95f;
   padding-right: 5%;
 }
