@@ -83,11 +83,8 @@ function compute(operator, operand1, operand2) {
     const num2 = Number(operand2);
     switch (operator) {
       case '+': return (num1.valueOf() + num2.valueOf()).toString();
-        break;
       case '-': return (num1.valueOf() - num2.valueOf()).toString();
-        break;
       case 'x': return (num1.valueOf() * num2.valueOf()).toString();
-        break;
       default:
         if (operand2 === '0') {
           return 0;
