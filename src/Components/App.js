@@ -3,7 +3,9 @@ import './App.css';
 
 import Display from './Display.js';
 import ButtonContainer from './ButtonContainer.js';
-import Calculator from '../Logic/Calculator.js'
+import ThemeBox from './ThemeBox.js';
+import Calculator from '../Logic/Calculator.js';
+import Theme from '../Logic/Theme.js';
 
 class App extends Component {
 
@@ -13,6 +15,7 @@ class App extends Component {
       operator : null,
       base : null,
       operand : null,
+      theme: 'Dark',
     };
   }
 
@@ -21,9 +24,14 @@ class App extends Component {
     this.setState(Calculator(this.state, buttonName));
   }
 
+  toggleTheme = () => {
+    this.setState(Theme(this.state));
+  }
+
   render() {
     return (
-      <div className="App">
+      <div className={this.state.theme}>
+        <ThemeBox clickHandler={this.toggleTheme} name={this.state.theme}/>
         <Display value={this.state.base || this.state.operand || '0'}/>
         <ButtonContainer clickHandler={this.handleClick}/>
       </div>

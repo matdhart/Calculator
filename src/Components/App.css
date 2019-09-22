@@ -1,4 +1,4 @@
-.App {
+.Dark {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -8,4 +8,24 @@
   font-size: calc(10px + 2vmin);
   background-color: #282c34;
   color: lightgrey;
+}
+
+.Dark button:hover {
+  background-color: rgb(78, 78, 78);
+}
+
+.Light {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  background-color: #lightgrey;
+  color: #282c34;
+}
+
+.Light button:hover {
+  background-color: rgb(58, 58, 58);
 }
